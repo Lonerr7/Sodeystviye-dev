@@ -10,6 +10,8 @@
   font-family: $font-family3;
   padding: 24px 0;
   background-color: $bg-color;
+  position: relative;
+  z-index: 100;
 
   a {
     color: $text-black;
@@ -24,6 +26,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    z-index: 100;
   }
 
   &__logo-link {
@@ -42,6 +45,8 @@
     justify-content: space-between;
     align-items: center;
     width: 1181px;
+    position: relative;
+    z-index: 100;
   }
 }
 
@@ -147,15 +152,15 @@
 
 .mobileMenu {
   position: absolute;
-  top: 0;
-  left: -1000px;
+  top: -1000px;
+  left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
   padding: 24px 0;
   background-color: $bg-color;
-  transition: all ease-in 0.3s;
+  transition: all ease-in 0.4s;
 
   &__list {
     width: 100%;
@@ -180,9 +185,96 @@
 }
 
 .mobileMenu__active {
-  left: 0;
+  top: 0;
 }
 
 // === /header ===
+
+// === hero ===
+
+.hero {
+  padding: 32px 0;
+  background-color: $bg-color;
+  position: relative;
+  z-index: 100;
+
+  // &__bgImage {
+  //   position: absolute;
+  //   top: -238px;
+  //   right: 0;
+  //   z-index: -1;
+  //   width: 1600px;
+  // }
+
+  &__box {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 106px;
+  }
+
+  &__textbox {
+    max-width: 870px;
+  }
+
+  &__subtitle {
+    color: $subtitle-color;
+    max-width: 220px;
+    margin-bottom: 24px;
+    line-height: 20px;
+  }
+
+  &__title {
+    font-size: 58px;
+    line-height: 68px;
+    font-weight: 600;
+    color: $text-black;
+    margin-bottom: 24px;
+
+    span {
+      font-weight: 700;
+      color: $text-orange;
+    }
+  }
+
+  &__text {
+    max-width: 489px;
+    color: $text-lightblack;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 60px;
+  }
+
+  &__btn {
+    border: none;
+    display: inline-block;
+    padding: 20px 34px;
+    border-radius: 10px;
+    background-color: $text-lightblack;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__img {
+    max-width: 687px;
+    max-height: 583px;
+  }
+
+  &__socials {
+    width: 139px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+// === /hero ===
 
 @import 'media';
