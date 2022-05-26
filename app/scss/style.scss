@@ -248,13 +248,7 @@
   }
 
   &__btn {
-    border: none;
-    display: inline-block;
-    padding: 20px 34px;
-    border-radius: 10px;
-    background-color: $text-lightblack;
-    color: #fff;
-    cursor: pointer;
+    @extend %btn;
 
     &:hover {
       text-decoration: underline;
@@ -269,12 +263,155 @@
   &__socials {
     width: 139px;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
   }
 }
 
 // === /hero ===
+
+// === services ===
+
+.services {
+  padding: 70px 0 88px 0;
+
+  &__textbox {
+    max-width: 550px;
+  }
+
+  &__title {
+    color: $title-color;
+    font-size: 50px;
+    line-height: 58px;
+    font-weight: 700;
+    margin-bottom: 13px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 26px;
+    color: $text-lightblack;
+    margin-bottom: 46px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 53px;
+  }
+
+  &__item {
+    padding: 28px 20px;
+    border-top: 1px solid $item-border;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__item--1,
+  &__item--2,
+  &__item--3,
+  &__item--5,
+  &__item--6,
+  &__item--7 {
+    border-right: 1px solid $item-border;
+  }
+
+  &__item--5,
+  &__item--6,
+  &__item--7 {
+    border-bottom: 1px solid $item-border;
+  }
+
+  &__itemicon {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 30px;
+  }
+
+  &__itemtitle {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+    color: $text-orange;
+    margin-bottom: 22px;
+  }
+
+  &__itemtext {
+    font-size: 18px;
+    line-height: 26px;
+    color: $text-lightblack;
+    margin-bottom: 40px;
+  }
+
+  &__itemlink {
+    display: flex;
+    align-items: center;
+    color: $text-black;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__linkicon {
+    margin-left: 11px;
+  }
+
+  &__itemtitle--8 {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 600;
+    color: #404040;
+    margin-bottom: 16px;
+    max-width: 143px;
+  }
+
+  &__itemtext--8 {
+    max-width: 198px;
+    color: $text-lightblack;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+
+  &__itemform {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__iteminput {
+    display: inline-block;
+    padding: 18px 16px;
+    border: 1px solid $input-border;
+    width: 316px;
+    border-radius: 10px;
+    margin-bottom: 37px;
+  }
+
+  &__itembtn {
+    @extend %btn;
+    width: 155px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__text {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    color: $title-color;
+    max-width: 460px;
+  }
+}
+
+// === /services ===
 
 @import 'media';

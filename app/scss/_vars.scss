@@ -9,9 +9,22 @@ $text-black: #333333;
 $subtitle-color: #242424;
 $text-orange: #ff8562;
 $text-lightblack: #223455;
+$title-color: #000000;
+$input-border: #bebebe;
+$item-border: #d3d3d3;
 
 %header-linktext {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
+}
+
+%btn {
+  border: none;
+  display: inline-block;
+  padding: 20px 34px;
+  border-radius: 10px;
+  background-color: $text-lightblack;
+  color: #fff;
+  cursor: pointer;
 }
