@@ -1,0 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
+// body {
+
+// }
+
+.container {
+  max-width: $container;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.lock {
+  overflow: hidden;
+}
