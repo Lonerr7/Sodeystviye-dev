@@ -392,9 +392,7 @@
   }
 
   &__title {
-    font-size: 50px;
-    line-height: 60px;
-    font-weight: 700;
+    @extend %title;
     margin-bottom: 62px;
     max-width: 605px;
   }
@@ -408,16 +406,7 @@
   }
 
   &__slidetextbox {
-    width: 97%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-    line-height: 20px;
-    font-family: $font-family3;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #000000;
-    margin-bottom: 21px;
+    @extend %slidetextbox;
   }
 
   &__slidetext {
@@ -425,16 +414,7 @@
   }
 
   &__slidelink {
-    display: flex;
-    align-items: center;
-    color: #000;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-
-    &:hover {
-      text-decoration: underline;
-    }
+    @extend %slidelink;
   }
 
   &__slideicon {
@@ -442,16 +422,11 @@
   }
 
   &__buttons {
-    margin: 0 auto;
-    justify-self: center;
+    align-self: center;
   }
 
   &__button {
-    padding: 0;
-    display: inline-block;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
+    @extend %slidebutton;
   }
 
   &__button--left {
@@ -460,5 +435,65 @@
 }
 
 // === /forums ===
+
+// === competitions ===
+
+.competitions {
+  padding: 57px 0 100px 0;
+  background-color: $bg-color;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    @extend %title;
+    margin-bottom: 7px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: $text-lightblack;
+    max-width: 477px;
+    margin-bottom: 87px;
+  }
+
+  &__slider {
+    margin-bottom: 44px;
+  }
+
+  &__slidetextbox {
+    @extend %slidetextbox
+  }
+
+  &__slideimage {
+    margin-bottom: 21px;
+  }
+
+  &__slidetext {
+    color: $text-orange;
+  }
+
+  &__slidelink {
+    @extend %slidelink;
+  }
+
+  &__buttons {
+    align-self: center
+  }
+
+  &__button {
+    @extend %slidebutton 
+  }
+
+  &__button--left {
+    margin-right: 27px; 
+  }
+}
+
+// === /competitions ===
 
 @import 'media';

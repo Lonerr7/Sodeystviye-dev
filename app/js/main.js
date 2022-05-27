@@ -9,4 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
     prevArrow: $('.forums__button--left'),
     nextArrow: $('.forums__button--right'),
   })
+
+  $('.competitions__slider').slick({
+    slidesToShow: 3,
+    prevArrow: $('.competitions__button--left'),
+    nextArrow: $('.competitions__button--right'),
+  })
 });
