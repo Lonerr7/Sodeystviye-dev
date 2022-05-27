@@ -49,7 +49,11 @@ function images() {
 }
 
 function scripts() {
-  return src(['app/js/main.js'])
+  return src([
+    'node_modules/jquery/dist/jquery.min.js',
+    'app/js/slick.min.js',
+    'app/js/main.js'
+  ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(dest('app/js'))
@@ -57,7 +61,10 @@ function scripts() {
 }
 
 function styles() {
-  return src('app/scss/style.scss')
+  return src([
+    'app/css/slick.css',
+    'app/scss/style.scss'
+  ])
     .pipe(scss({ outputStyle: 'compressed' }))
     .pipe(concat('style.min.css'))
     .pipe(

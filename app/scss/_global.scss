@@ -1,9 +1,11 @@
 html {
   scroll-behavior: smooth;
+  // overflow-x: hidden;
 }
 
 body {
   font-family: $font-family3;
+  overflow-x: hidden;
 }
 
 .container {
@@ -14,4 +16,12 @@ body {
 
 .lock {
   overflow: hidden;
+}
+
+.slick-slide {
+  margin: 0 55px;
+}
+
+.slick-list {
+  margin: 0 -55px;
 }
