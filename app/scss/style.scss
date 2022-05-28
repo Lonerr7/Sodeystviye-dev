@@ -492,6 +492,10 @@
   &__button--left {
     margin-right: 27px;
   }
+
+  &__slideicon {
+    margin-left: 13px;
+  }
 }
 
 // === /competitions ===
@@ -756,6 +760,7 @@
     border-radius: 20px 20px 20px 0px;
     position: relative;
     margin-bottom: 44px;
+    box-shadow: 2px 3px 26px rgba(0, 0, 0, 0.06);
 
     &::after {
       content: '';
@@ -794,5 +799,63 @@
 }
 
 // === /results ===
+
+// === news ===
+
+.news {
+  padding: 52px 0 138px 0;
+  background-color: $bg-color;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    @extend %title;
+    margin-bottom: 38px;
+  }
+
+  &__slider {
+    margin-bottom: 44px;
+  }
+
+  &__slideimage {
+    margin-bottom: 20px;
+  }
+
+  &__slidetextbox {
+    @extend %slidetextbox;
+  }
+
+  &__slidetext {
+    color: $text-orange;
+    max-width: 313px;
+  }
+
+  &__slidelink {
+    @extend %slidelink;
+  }
+
+  &__slideicon {
+    margin-left: 13px;
+  }
+
+  &__buttons {
+    align-self: center;
+  }
+
+  &__button {
+    @extend %slidebutton;
+  }
+
+  &__button--left {
+    margin-right: 27px;
+  }
+
+  
+}
+
+// === /news ===
 
 @import 'media';

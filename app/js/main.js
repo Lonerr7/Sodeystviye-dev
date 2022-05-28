@@ -8,22 +8,28 @@ document.addEventListener('DOMContentLoaded', function () {
     slidesToShow: 3,
     prevArrow: $('.forums__button--left'),
     nextArrow: $('.forums__button--right'),
-  })
+  });
 
   $('.competitions__slider').slick({
     slidesToShow: 3,
     prevArrow: $('.competitions__button--left'),
     nextArrow: $('.competitions__button--right'),
+  });
+
+  $('.news__slider').slick({
+    slidesToShow: 3,
+    prevArrow: $('.news__button--left'),
+    nextArrow: $('.news__button--right'),
   })
 
   //* Popup
   $('.policy__popuplink').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
+    disableOn: 700,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
 
-		fixedContentPos: false
-	});
+    fixedContentPos: false,
+  });
 });
