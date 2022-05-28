@@ -636,7 +636,6 @@
 
 // === /friends ===
 
-
 // === reviews ===
 
 .reviews {
@@ -677,7 +676,7 @@
     height: 80px;
     border-radius: 10px;
   }
-  
+
   &__item--1 {
     background-color: rgba(255, 51, 51, 0.22);
   }
@@ -708,5 +707,92 @@
 }
 
 // === /reviews ===
+
+// === results ===
+
+.results {
+  padding: 80px 0 124px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__box {
+    position: relative;
+    z-index: 100;
+    flex-grow: 1;
+  }
+
+  &__boxbg {
+    position: absolute;
+    top: 0;
+    left: -23px;
+    z-index: -100;
+  }
+
+  &__title {
+    @extend %title;
+    max-width: 412px;
+  }
+
+  &__item {
+    position: absolute;
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 600;
+
+    span {
+      color: $text-orange;
+    }
+  }
+
+  &__rect {
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px 20px 20px 0px;
+    position: relative;
+    margin-bottom: 44px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 17px;
+      height: 17px;
+      background-color: $text-orange;
+      border-radius: 10px;
+    }
+  }
+
+  &__item--1 {
+    bottom: 113px;
+    left: 112px;
+  }
+
+  &__item--2 {
+    left: 51%;
+  }
+
+  &__item--3 {
+    right: 87px;
+    top: -25px;
+  }
+
+  &__itemtext--1 {
+    max-width: 329px;
+  }
+
+  &__itemtext--2 {
+    max-width: 96px;
+  }
+}
+
+// === /results ===
 
 @import 'media';
