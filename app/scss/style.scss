@@ -630,11 +630,83 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
   }
-
 }
 
 // === /friends ===
+
+
+// === reviews ===
+
+.reviews {
+  padding: 80px 0;
+  text-align: center;
+
+  &__title {
+    @extend %title;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+
+    span {
+      color: $text-orange;
+      font-weight: 700;
+    }
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 600;
+    color: $text-lightblack;
+    margin-bottom: 64px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 652px;
+  }
+
+  &__item {
+    width: 78px;
+    height: 80px;
+    border-radius: 10px;
+  }
+  
+  &__item--1 {
+    background-color: rgba(255, 51, 51, 0.22);
+  }
+
+  &__item--2 {
+    background-color: rgba(0, 165, 236, 0.22);
+  }
+
+  &__item--3 {
+    background-color: rgba(255, 133, 98, 0.22);
+  }
+
+  &__item--4 {
+    background-color: rgba(64, 218, 85, 0.22);
+  }
+
+  &__item--5 {
+    background-color: rgba(69, 102, 142, 0.22);
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// === /reviews ===
 
 @import 'media';
