@@ -15,4 +15,15 @@ document.addEventListener('DOMContentLoaded', function () {
     prevArrow: $('.competitions__button--left'),
     nextArrow: $('.competitions__button--right'),
   })
+
+  //* Popup
+  $('.policy__popuplink').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+	});
 });

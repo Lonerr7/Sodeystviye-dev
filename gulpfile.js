@@ -52,6 +52,7 @@ function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.min.js',
     'app/js/slick.min.js',
+    'app/js/jquery.magnific-popup.min.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
@@ -63,6 +64,7 @@ function scripts() {
 function styles() {
   return src([
     'app/css/slick.css',
+    'app/css/magnific-popup.css',
     'app/scss/style.scss'
   ])
     .pipe(scss({ outputStyle: 'compressed' }))
