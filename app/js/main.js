@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
   const burger = document.querySelector('.burger');
   const mobileMenu = document.querySelector('.mobilemenu');
+  const body = document.body;
 
   burger.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active')
+    mobileMenu.classList.toggle('active');
+    body.classList.toggle('lock');
   });
 
   //* Slider
@@ -25,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     slidesToShow: 3,
     prevArrow: $('.news__button--left'),
     nextArrow: $('.news__button--right'),
-  })
+  });
 
   //* Popup
   $('.policy__popuplink').magnificPopup({
