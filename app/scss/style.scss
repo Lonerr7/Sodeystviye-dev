@@ -116,7 +116,7 @@
   display: none;
   width: 54px;
   position: relative;
-  z-index: 70;
+  z-index: 999;
 
   div {
     height: 2px;
@@ -164,6 +164,7 @@
   align-items: center;
   transition: all 0.4s ease;
   text-align: center;
+  z-index: 999;
 
   &__item:not(:last-child) {
     margin-bottom: 30px;
@@ -188,14 +189,6 @@
   background-color: $bg-color;
   position: relative;
   z-index: 100;
-
-  // &__bgImage {
-  //   position: absolute;
-  //   top: -238px;
-  //   right: 0;
-  //   z-index: -1;
-  //   width: 1600px;
-  // }
 
   &__box {
     margin-top: 90px;
@@ -246,9 +239,15 @@
     }
   }
 
+  // &__imgbox {
+  //   width: 687px;
+  //   height: 583px;
+  // }
+
   &__img {
     max-width: 687px;
     max-height: 583px;
+    // object-fit: contain;
   }
 
   &__socials {
