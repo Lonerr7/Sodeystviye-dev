@@ -426,7 +426,7 @@
   }
 
   &__slideimage {
-    margin-bottom: 20px;
+    @extend %slideimage;
   }
 
   &__slidetextbox {
@@ -494,7 +494,7 @@
   }
 
   &__slideimage {
-    margin-bottom: 21px;
+    @extend %slideimage;
   }
 
   &__slidetext {
@@ -845,7 +845,7 @@
   }
 
   &__slideimage {
-    margin-bottom: 20px;
+    @extend %slideimage;
   }
 
   &__slidetextbox {

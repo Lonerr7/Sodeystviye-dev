@@ -11,10 +11,23 @@ document.addEventListener('DOMContentLoaded', function () {
   //* Slider
 
   $('.forums__slider').slick({
-    // arrows: true,
     slidesToShow: 3,
     prevArrow: $('.forums__button--left'),
     nextArrow: $('.forums__button--right'),
+    responsive: [
+      {
+        breakpoint: 951,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 601,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
   $('.competitions__slider').slick({
