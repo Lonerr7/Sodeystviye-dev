@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
   const burger = document.querySelector('.burger');
+  const mobileMenu = document.querySelector('.mobilemenu');
+
+  burger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active')
+  });
 
   //* Slider
 
